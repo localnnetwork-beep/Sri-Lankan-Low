@@ -1,0 +1,5 @@
+SRI LANKA LAW Android APK Project
+
+පළමුව README_SI.md කියවන්න.
+Computer එකෙන් APK එක build කිරීමට GitHub Actions ක්‍රමය භාවිතා කළ හැක.
+මෙම ZIP එක APK file එක නොවේ; APK එක build කරගැනීමට අවශ්‍ය source project එකයි.

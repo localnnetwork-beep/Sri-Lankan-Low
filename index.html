@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b32">
+  <meta name="description" content="ශ්‍රී ලංකාවේ නීති, පනත්, සංශෝධන සහ නිල මූලාශ්‍ර සෙවීම සඳහා නීති තොරතුරු යෙදුම.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Sri Lanka Law</title>
+</head>
+<body>
+<header class="top">
+  <div class="brandmark">⚖</div>
+  <div><h1>SRI LANKA LAW</h1><p>ශ්‍රී ලංකාවේ නීති තොරතුරු පුස්තකාලය</p></div>
+  <button id="installBtn" class="small hidden">Install</button>
+</header>
+<main>
+  <section class="hero">
+    <span class="eyebrow">LEGAL INFORMATION PLATFORM</span>
+    <h2>නීතිය දැනගන්න.<br>ඔබේ අයිතිවාසිකම් හඳුනාගන්න.</h2>
+    <p>පනත්, වගන්ති, සංශෝධන සහ නිල නීති මූලාශ්‍ර එකම තැනකින් සොයන්න.</p>
+    <label class="search"><span>⌕</span><input id="searchInput" placeholder="නීතියක්, පනත් අංකයක් හෝ මාතෘකාවක් සොයන්න..." autocomplete="off"></label>
+    <div class="hero-note">තොරතුරු පරීක්ෂා කිරීමේදී නිල මූලාශ්‍රය සහ අවසන් පරීක්ෂා කළ දිනය බලන්න.</div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>නීති කාණ්ඩ</h2></div><span id="categoryCount" class="muted"></span></div>
+    <div id="categories" class="grid"></div>
+  </section>
+
+  <section class="section" id="searchResultsSection">
+    <div class="section-head"><div><span class="eyebrow">DISCOVER</span><h2>සෙවුම් ප්‍රතිඵල</h2></div></div>
+    <div id="searchResults" class="panel muted">සෙවීමක් ආරම්භ කළ විට ප්‍රතිඵල මෙහි පෙන්වයි.</div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><span class="eyebrow">LEGAL TRACKER</span><h2>නව නීති සහ සංශෝධන</h2></div><span class="tag">සත්‍යාපිත දත්ත පමණි</span></div>
+    <div class="panel">
+      <p>දැනට යෙදුමේ සත්‍යාපිත නව සංශෝධන දත්ත ඇතුළත් කර නැත. නීතියක් බලාත්මක වූ දිනය සහ ගැසට්/පනත් මූලාශ්‍රය තහවුරු කළ පසු පමණක් මෙහි පෙන්වනු ලැබේ.</p>
+      <div class="actions">
+        <a href="https://documents.gov.lk/" target="_blank" rel="noopener">නිල ගැසට් බලන්න ↗</a>
+        <a href="https://www.parliament.lk/" target="_blank" rel="noopener">පාර්ලිමේන්තුව ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><span class="eyebrow">AI ASSISTANT</span><h2>AI නීති සහායකයා</h2></div><span class="tag">Backend අවශ්‍යයි</span></div>
+    <div class="panel">
+      <p>නීතිමය ප්‍රශ්නයක් සිංහලෙන් ලියන්න. සම්පූර්ණ AI පිළිතුරු සේවාව සක්‍රීය කිරීමට ආරක්ෂිත server-side AI සම්බන්ධතාවයක් සහ නිල නීති දත්ත ගබඩාවක් සකස් කළ යුතුය.</p>
+      <textarea id="question" rows="3" placeholder="උදා: මගේ වැටුප නොගෙවුවොත් මට කළ හැක්කේ කුමක්ද?"></textarea>
+      <button id="askBtn" class="primary">ප්‍රශ්නය සකස් කරන්න</button>
+      <div id="aiNotice" class="notice hidden"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><span class="eyebrow">OFFICIAL SOURCES</span><h2>නිල නීති මූලාශ්‍ර</h2></div></div>
+    <div class="source-list">
+      <a href="https://www.parliament.lk/" target="_blank" rel="noopener"><b>ශ්‍රී ලංකා පාර්ලිමේන්තුව</b><span>පනත්, පනත් කෙටුම්පත් සහ පාර්ලිමේන්තු තොරතුරු ↗</span></a>
+      <a href="https://documents.gov.lk/" target="_blank" rel="noopener"><b>රජයේ මුද්‍රණ දෙපාර්තමේන්තුව</b><span>නිල ගැසට් සහ රජයේ ලේඛන ↗</span></a>
+      <a href="https://www.lawnet.gov.lk/" target="_blank" rel="noopener"><b>LawNet</b><span>නීති සහ නඩු තීන්දු සෙවීම ↗</span></a>
+      <a href="https://www.supremecourt.lk/" target="_blank" rel="noopener"><b>ශ්‍රේෂ්ඨාධිකරණය</b><span>අධිකරණ තොරතුරු සහ තීන්දු ↗</span></a>
+    </div>
+  </section>
+
+  <section class="disclaimer">
+    <b>නීතිමය දැනුම්දීම</b>
+    <p>මෙය නීති තොරතුරු සොයාගැනීමට සහ අධ්‍යයනයට උපකාරී වන යෙදුම් ආකෘතියකි. නීතිඥ උපදෙස් හෝ අධිකරණ තීරණ වෙනුවට භාවිත නොකරන්න. පනත් කෙටුම්පතක්, සම්මත පනතක්, සහතික කළ පනතක් සහ බලාත්මක නීතියක් එකිනෙකට වෙනස් විය හැක.</p>
+  </section>
+</main>
+<footer>© Sri Lanka Law · Legal information, carefully verified</footer>
+<script src="app.js"></script>
+</body>
+</html>

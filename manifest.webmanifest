@@ -1,0 +1,10 @@
+{
+  "name": "Sri Lanka Law",
+  "short_name": "SL Law",
+  "lang": "si",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#101b32",
+  "icons": []
+}
